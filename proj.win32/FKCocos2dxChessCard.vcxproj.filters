@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Base">
+      <UniqueIdentifier>{fc9aeb48-84a5-4e76-956d-30732892e556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Mgr">
+      <UniqueIdentifier>{96b19791-488b-4a28-961b-71ccd34b4cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Data">
+      <UniqueIdentifier>{26911a3f-033f-436a-8b93-200f29413998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Platform">
+      <UniqueIdentifier>{405c631b-13ea-48ad-9611-e8d89a22be70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scene">
+      <UniqueIdentifier>{39a24a1c-4105-4970-92ba-55800755c23a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scene\SubScene">
+      <UniqueIdentifier>{6ff397e2-e217-4a95-af6a-d02451d641ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UI">
+      <UniqueIdentifier>{47b5030f-a171-4f84-a2cb-5467b33aecb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UI\SubWidget">
+      <UniqueIdentifier>{ab580c1e-f2ee-419a-affa-3a147ba29b33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UI\UIBase">
+      <UniqueIdentifier>{c08d4872-d643-4dd9-a4cd-1fd8bc68cb09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Wrapper">
+      <UniqueIdentifier>{4f755fc5-fa07-453f-9067-4bd891dd524e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Event">
+      <UniqueIdentifier>{59fccc4a-6a76-4dbf-93bc-e40669efc0bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Panel">
+      <UniqueIdentifier>{564640d9-86d4-4e58-8ebb-ce101f2d3f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Panel\SubPanel">
+      <UniqueIdentifier>{6687aa2d-7a5a-4849-b662-b73ae46120a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Socket">
+      <UniqueIdentifier>{f8088ccf-d8f3-43c2-8815-e7777c662c50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Sound">
+      <UniqueIdentifier>{25bb4ef1-33cd-4bb7-84fe-a4d6631c01be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\NetMsg">
+      <UniqueIdentifier>{b7911228-c44e-40f1-a452-1bc8a1d95c0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Interface">
+      <UniqueIdentifier>{b0accb7c-c5cc-404a-8a68-e28c102925ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Mgr\FKMobileManager.cpp">
+      <Filter>Classes\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\FKEncrpty.cpp">
+      <Filter>Classes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\FKConfigFunc.cpp">
+      <Filter>Classes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Platform\FKPlatformInterfaceManager.cpp">
+      <Filter>Classes\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\FKStringFunc.cpp">
+      <Filter>Classes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\FKTimeFunc.cpp">
+      <Filter>Classes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\FKUtilFunc.cpp">
+      <Filter>Classes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\FKVisiableRect.cpp">
+      <Filter>Classes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\FKDateTime.cpp">
+      <Filter>Classes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\FKDataTimeSpan.cpp">
+      <Filter>Classes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Mgr\FKViewManager.cpp">
+      <Filter>Classes\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\FKSceneManager.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\FKSceneLogo.cpp">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Button.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_CheckBox.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ControlView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ExpandableListView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_GridPageView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_GridView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ImageView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ImageViewScale9.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Label.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_LabelAtlas.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_LabelBMFont.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Layout.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ListView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_PageView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ProgressBar.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ScrollView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Slider.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_TableView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_TextRich.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ToggleView.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Protocol.cpp">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Widget.cpp">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Scale9Sprite.cpp">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Lua.cpp">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ColorView.cpp">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_GradientView.cpp">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_WidgetWindow.cpp">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\FKSceneEmpty.cpp">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\FKSceneLogin.cpp">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Wrapper\FKSpriteBase.cpp">
+      <Filter>Classes\Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\FKLayerBase.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Panel\FKNodePanel.cpp">
+      <Filter>Classes\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Panel\FKBoxPanel.cpp">
+      <Filter>Classes\Panel\SubPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Panel\FKPanelManager.cpp">
+      <Filter>Classes\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Socket\FKSocketManager.cpp">
+      <Filter>Classes\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Socket\FKRoomSocketManager.cpp">
+      <Filter>Classes\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\FKLayerLogin.cpp">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Data\FKDataCenterManager.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\FKJson.cpp">
+      <Filter>Classes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Mgr\FKTipsManager.cpp">
+      <Filter>Classes\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Mgr\FKGameManager.cpp">
+      <Filter>Classes\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NetMsg\FKNetMsg.cpp">
+      <Filter>Classes\NetMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Socket\FKTCPSocket.cpp">
+      <Filter>Classes\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Socket\FKGameSocket.cpp">
+      <Filter>Classes\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NetMsg\CMD_ExtraMsg.cpp">
+      <Filter>Classes\NetMsg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMacros.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKTypeDefine.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKBaseMacros.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mgr\FKMobileManager.h">
+      <Filter>Classes\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKConfigFunc.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKEncrpty.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKUserConfig.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Platform\FKPlatformInterfaceManager.h">
+      <Filter>Classes\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKStringFunc.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKTimeFunc.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKUtilFunc.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKVisiableRect.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKDateTime.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKTime.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKDataTimeSpan.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mgr\FKViewManager.h">
+      <Filter>Classes\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKSceneManager.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKSceneDefine.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKSceneBase.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKSceneLogo.h">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\FKCW_UIWidget.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Button.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_CheckBox.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ControlView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ExpandableListView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_GridPageView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_GridView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ImageView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ImageViewScale9.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Label.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_LabelAtlas.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_LabelBMFont.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Layout.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ListView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_PageView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ProgressBar.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ScrollView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Slider.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_TableView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_TextRich.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ToggleView.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Macros.h">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Protocol.h">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Widget.h">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Scale9Sprite.h">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Lua.h">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ColorView.h">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_GradientView.h">
+      <Filter>Classes\UI\UIBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_WidgetWindow.h">
+      <Filter>Classes\UI\SubWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKSceneLogoRes.h">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKSceneRes.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKSceneLogin.h">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKSceneEmpty.h">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKSceneEmptyRes.h">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKLayerBase.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Wrapper\FKSpriteBase.h">
+      <Filter>Classes\Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Wrapper\FKSpriteDefine.h">
+      <Filter>Classes\Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Event\FKEventMacros.h">
+      <Filter>Classes\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Panel\FKNodePanel.h">
+      <Filter>Classes\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Panel\FKNodePanelRes.h">
+      <Filter>Classes\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Panel\FKBoxPanel.h">
+      <Filter>Classes\Panel\SubPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Panel\FKBoxPanelRes.h">
+      <Filter>Classes\Panel\SubPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Panel\FKPanelMacros.h">
+      <Filter>Classes\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Panel\FKPanelManager.h">
+      <Filter>Classes\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Socket\FKSocketManager.h">
+      <Filter>Classes\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Socket\FKRoomSocketManager.h">
+      <Filter>Classes\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKLayerLogin.h">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKUserData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKDataCenterManager.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKLoginData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKVoiceData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKDataInfo.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKGameKindData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKRoomKindData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKRoomGroupKindData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKGoodData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKJsonFormatData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\FKJson.h">
+      <Filter>Classes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mgr\FKTipsManager.h">
+      <Filter>Classes\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mgr\FKTipsManagerRes.h">
+      <Filter>Classes\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FKLayerLoginRes.h">
+      <Filter>Classes\Scene\SubScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mgr\FKGameManager.h">
+      <Filter>Classes\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sound\FKSoundRes.h">
+      <Filter>Classes\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetMsg\FKNetMsg.h">
+      <Filter>Classes\NetMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetMsg\CMD_MsgDefine.h">
+      <Filter>Classes\NetMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetMsg\CMD_Login.h">
+      <Filter>Classes\NetMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Socket\FKTCPSocket.h">
+      <Filter>Classes\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Socket\FKGameSocket.h">
+      <Filter>Classes\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Socket\FKSocketCommon.h">
+      <Filter>Classes\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKTableTotalInfo.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKUserTotalInfo.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKGameTotalInfo.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mgr\FKServerRulesMgr.h">
+      <Filter>Classes\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetMsg\CMD_ExtraMsg.h">
+      <Filter>Classes\NetMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Interface\IGameUserInfo.h">
+      <Filter>Classes\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Interface\IGameUserInfoMgr.h">
+      <Filter>Classes\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mgr\FKGameUserManager.h">
+      <Filter>Classes\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Data\FKUserScore.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

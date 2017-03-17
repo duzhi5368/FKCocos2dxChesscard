@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Base\FKConfigFunc.cpp" />
+    <ClCompile Include="..\Classes\Base\FKDataTimeSpan.cpp" />
+    <ClCompile Include="..\Classes\Base\FKDateTime.cpp" />
+    <ClCompile Include="..\Classes\Base\FKEncrpty.cpp" />
+    <ClCompile Include="..\Classes\Base\FKJson.cpp" />
+    <ClCompile Include="..\Classes\Base\FKStringFunc.cpp" />
+    <ClCompile Include="..\Classes\Base\FKTimeFunc.cpp" />
+    <ClCompile Include="..\Classes\Base\FKUtilFunc.cpp" />
+    <ClCompile Include="..\Classes\Base\FKVisiableRect.cpp" />
+    <ClCompile Include="..\Classes\Data\FKDataCenterManager.cpp" />
+    <ClCompile Include="..\Classes\Mgr\FKGameManager.cpp" />
+    <ClCompile Include="..\Classes\Mgr\FKMobileManager.cpp" />
+    <ClCompile Include="..\Classes\Mgr\FKTipsManager.cpp" />
+    <ClCompile Include="..\Classes\Mgr\FKViewManager.cpp" />
+    <ClCompile Include="..\Classes\NetMsg\CMD_ExtraMsg.cpp" />
+    <ClCompile Include="..\Classes\NetMsg\FKNetMsg.cpp" />
+    <ClCompile Include="..\Classes\Panel\FKBoxPanel.cpp" />
+    <ClCompile Include="..\Classes\Panel\FKNodePanel.cpp" />
+    <ClCompile Include="..\Classes\Panel\FKPanelManager.cpp" />
+    <ClCompile Include="..\Classes\Platform\FKPlatformInterfaceManager.cpp" />
+    <ClCompile Include="..\Classes\Scene\FKLayerBase.cpp" />
+    <ClCompile Include="..\Classes\Scene\FKLayerLogin.cpp" />
+    <ClCompile Include="..\Classes\Scene\FKSceneEmpty.cpp" />
+    <ClCompile Include="..\Classes\Scene\FKSceneLogin.cpp" />
+    <ClCompile Include="..\Classes\Scene\FKSceneLogo.cpp" />
+    <ClCompile Include="..\Classes\Scene\FKSceneManager.cpp" />
+    <ClCompile Include="..\Classes\Socket\FKGameSocket.cpp" />
+    <ClCompile Include="..\Classes\Socket\FKRoomSocketManager.cpp" />
+    <ClCompile Include="..\Classes\Socket\FKSocketManager.cpp" />
+    <ClCompile Include="..\Classes\Socket\FKTCPSocket.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Button.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_CheckBox.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ColorView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ControlView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ExpandableListView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_GradientView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_GridPageView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_GridView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ImageView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ImageViewScale9.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Label.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_LabelAtlas.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_LabelBMFont.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Layout.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ListView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Lua.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_PageView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ProgressBar.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Protocol.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Scale9Sprite.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ScrollView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Slider.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_TableView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_TextRich.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_ToggleView.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_Widget.cpp" />
+    <ClCompile Include="..\Classes\UI\Source\FKCW_UIWidget_WidgetWindow.cpp" />
+    <ClCompile Include="..\Classes\Wrapper\FKSpriteBase.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\AppMacros.h" />
+    <ClInclude Include="..\Classes\Base\FKConfigFunc.h" />
+    <ClInclude Include="..\Classes\Base\FKBaseMacros.h" />
+    <ClInclude Include="..\Classes\Base\FKDataTimeSpan.h" />
+    <ClInclude Include="..\Classes\Base\FKDateTime.h" />
+    <ClInclude Include="..\Classes\Base\FKEncrpty.h" />
+    <ClInclude Include="..\Classes\Base\FKJson.h" />
+    <ClInclude Include="..\Classes\Base\FKStringFunc.h" />
+    <ClInclude Include="..\Classes\Base\FKTimeFunc.h" />
+    <ClInclude Include="..\Classes\Base\FKTypeDefine.h" />
+    <ClInclude Include="..\Classes\Base\FKUtilFunc.h" />
+    <ClInclude Include="..\Classes\Base\FKVisiableRect.h" />
+    <ClInclude Include="..\Classes\Data\FKDataCenterManager.h" />
+    <ClInclude Include="..\Classes\Data\FKDataInfo.h" />
+    <ClInclude Include="..\Classes\Data\FKGameKindData.h" />
+    <ClInclude Include="..\Classes\Data\FKGameTotalInfo.h" />
+    <ClInclude Include="..\Classes\Data\FKGoodData.h" />
+    <ClInclude Include="..\Classes\Data\FKJsonFormatData.h" />
+    <ClInclude Include="..\Classes\Data\FKLoginData.h" />
+    <ClInclude Include="..\Classes\Data\FKRoomGroupKindData.h" />
+    <ClInclude Include="..\Classes\Data\FKRoomKindData.h" />
+    <ClInclude Include="..\Classes\Data\FKTableTotalInfo.h" />
+    <ClInclude Include="..\Classes\Data\FKTime.h" />
+    <ClInclude Include="..\Classes\Data\FKUserConfig.h" />
+    <ClInclude Include="..\Classes\Data\FKUserData.h" />
+    <ClInclude Include="..\Classes\Data\FKUserScore.h" />
+    <ClInclude Include="..\Classes\Data\FKUserTotalInfo.h" />
+    <ClInclude Include="..\Classes\Data\FKVoiceData.h" />
+    <ClInclude Include="..\Classes\Event\FKEventMacros.h" />
+    <ClInclude Include="..\Classes\Interface\IGameUserInfo.h" />
+    <ClInclude Include="..\Classes\Interface\IGameUserInfoMgr.h" />
+    <ClInclude Include="..\Classes\Mgr\FKGameManager.h" />
+    <ClInclude Include="..\Classes\Mgr\FKGameUserManager.h" />
+    <ClInclude Include="..\Classes\Mgr\FKMobileManager.h" />
+    <ClInclude Include="..\Classes\Mgr\FKServerRulesMgr.h" />
+    <ClInclude Include="..\Classes\Mgr\FKTipsManager.h" />
+    <ClInclude Include="..\Classes\Mgr\FKTipsManagerRes.h" />
+    <ClInclude Include="..\Classes\Mgr\FKViewManager.h" />
+    <ClInclude Include="..\Classes\NetMsg\CMD_Login.h" />
+    <ClInclude Include="..\Classes\NetMsg\CMD_MsgDefine.h" />
+    <ClInclude Include="..\Classes\NetMsg\CMD_ExtraMsg.h" />
+    <ClInclude Include="..\Classes\NetMsg\FKNetMsg.h" />
+    <ClInclude Include="..\Classes\Panel\FKBoxPanel.h" />
+    <ClInclude Include="..\Classes\Panel\FKBoxPanelRes.h" />
+    <ClInclude Include="..\Classes\Panel\FKNodePanel.h" />
+    <ClInclude Include="..\Classes\Panel\FKPanelMacros.h" />
+    <ClInclude Include="..\Classes\Panel\FKNodePanelRes.h" />
+    <ClInclude Include="..\Classes\Panel\FKPanelManager.h" />
+    <ClInclude Include="..\Classes\Platform\FKPlatformInterfaceManager.h" />
+    <ClInclude Include="..\Classes\Scene\FKLayerBase.h" />
+    <ClInclude Include="..\Classes\Scene\FKLayerLogin.h" />
+    <ClInclude Include="..\Classes\Scene\FKLayerLoginRes.h" />
+    <ClInclude Include="..\Classes\Scene\FKSceneBase.h" />
+    <ClInclude Include="..\Classes\Scene\FKSceneDefine.h" />
+    <ClInclude Include="..\Classes\Scene\FKSceneEmpty.h" />
+    <ClInclude Include="..\Classes\Scene\FKSceneEmptyRes.h" />
+    <ClInclude Include="..\Classes\Scene\FKSceneLogin.h" />
+    <ClInclude Include="..\Classes\Scene\FKSceneLogo.h" />
+    <ClInclude Include="..\Classes\Scene\FKSceneLogoRes.h" />
+    <ClInclude Include="..\Classes\Scene\FKSceneManager.h" />
+    <ClInclude Include="..\Classes\Scene\FKSceneRes.h" />
+    <ClInclude Include="..\Classes\Socket\FKGameSocket.h" />
+    <ClInclude Include="..\Classes\Socket\FKRoomSocketManager.h" />
+    <ClInclude Include="..\Classes\Socket\FKSocketCommon.h" />
+    <ClInclude Include="..\Classes\Socket\FKSocketManager.h" />
+    <ClInclude Include="..\Classes\Socket\FKTCPSocket.h" />
+    <ClInclude Include="..\Classes\Sound\FKSoundRes.h" />
+    <ClInclude Include="..\Classes\UI\FKCW_UIWidget.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Button.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_CheckBox.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ColorView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ControlView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ExpandableListView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_GradientView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_GridPageView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_GridView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ImageView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ImageViewScale9.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Label.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_LabelAtlas.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_LabelBMFont.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Layout.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ListView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Lua.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Macros.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_PageView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ProgressBar.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Protocol.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Scale9Sprite.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ScrollView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Slider.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_TableView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_TextRich.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_ToggleView.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_Widget.h" />
+    <ClInclude Include="..\Classes\UI\Include\FKCW_UIWidget_WidgetWindow.h" />
+    <ClInclude Include="..\Classes\Wrapper\FKSpriteBase.h" />
+    <ClInclude Include="..\Classes\Wrapper\FKSpriteDefine.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\Box2D\proj.win32\Box2D.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\chipmunk\proj.win32\chipmunk.vcxproj">
+      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
